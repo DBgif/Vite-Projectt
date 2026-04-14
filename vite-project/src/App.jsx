@@ -5,58 +5,59 @@ const teamData = {
   leader: {
     role: '🌿 Environment Leader',
     name: 'Paredes',
-    img: 'Images/PAREDES.png'
+    img: 'paredes.png'  // Fixed
   },
   assistants: [
-    { role: '🌱 Sustainable Assistant', name: 'Ayala', img: 'Images/AYALA.jpeg' },
-    { role: '🌍 Eco‑Secretary', name: 'Mabini', img: 'Images/Mabini.png' },
-    { role: '💰 Treasurer', name: 'Jumayag', img: 'Images/JUMAYAG.jpg' }
+    { role: '🌱 Sustainable Assistant', name: 'Ayala', img: 'ayala.jpeg' },      // Fixed
+    { role: '🌍 Eco‑Secretary', name: 'Mabini', img: 'mabini.png' },           // Fixed
+    { role: '💰 Treasurer', name: 'Jumayag', img: 'jumayag.jpg' }              // Fixed
   ],
   teams: [
     {
       role: '🌳 Documentation & Logistics',
       members: [
-        { name: 'Dinlasan', img: 'Documentations and Logistics/DINLASAN.jpg' },
-        { name: 'Jaropojop', img: 'Documentations and Logistics/JAROPOJOP.jpeg' },
-        { name: 'Obo', img: 'Documentations and Logistics/OBO.jpg' },
-        { name: 'Pepito', img: 'Documentations and Logistics/Pepito.jpg' },
-        { name: 'Salvador', img: 'Documentations and Logistics/IMG_7588.PNG' }
+        { name: 'Dinlasan', img: 'dinlasan.jpg' },                              // Fixed
+        { name: 'Jaropojop', img: 'jaropojop.jpeg' },                           // Fixed
+        { name: 'Obo', img: 'obo.jpg' },                                        // Fixed
+        { name: 'Pepito', img: 'pepito.jpg' },                                  // Fixed
+        { name: 'Salvador', img: 'img_7588.png' }                               // Fixed
       ]
     },
     {
       role: '♻️ CNA Organizer (Eco‑Programs)',
       members: [
-        { name: 'Benghay', img: 'CNA Oraganizer/BENGHAY.jpg' },
-        { name: 'Gonzales', img: 'CNA Oraganizer/GONZALES.jpg' },
-        { name: 'Malabanan', img: 'CNA Oraganizer/MALABANAN.jpg' },
-        { name: 'Rong', img: 'CNA Oraganizer/Rong.png' },
-        { name: 'Salazar', img: 'CNA Oraganizer/SALAZAR.jpeg' },
-        { name: 'Solis', img: 'CNA Oraganizer/SOLIS.jpg' }
+        { name: 'Benghay', img: 'benghay.jpg' },                                // Fixed
+        { name: 'Gonzales', img: 'gonzales.jpg' },                              // Fixed
+        { name: 'Malabanan', img: 'malabanan.jpg' },                            // Fixed
+        { name: 'Rong', img: 'rong.png' },                                      // Fixed
+        { name: 'Salazar', img: 'salazar.jpeg' },                               // Fixed
+        { name: 'Solis', img: 'solis.jpg' }                                     // Fixed
       ]
     },
     {
       role: '🎨 Creatives',
       members: [
-        { name: 'Bay', img: 'Creatives/BAY.png' },
-        { name: 'Castañeda', img: 'Creatives/CASTAÑEDA (1).png' },
-        { name: 'Deles', img: 'creative3.jpg' },
-        { name: 'Gentilezo', img: 'Creatives/Gentilezo.jpg' },
-        { name: 'Reguero', img: 'Creatives/Reguero.png' }
+        { name: 'Bay', img: 'bay.png' },                                        // Fixed
+        { name: 'Castañeda', img: 'castañeda (1).png' },                        // Fixed
+        { name: 'Deles', img: 'creative3.jpg' },                                // Fixed
+        { name: 'Gentilezo', img: 'gentilezo.jpg' },                            // Fixed
+        { name: 'Reguero', img: 'reguero.png' }                                 // Fixed
       ]
     }
   ],
   editors: {
     role: '✍️ Narrative Paper Editor (Climate Narratives)',
     members: [
-      { name: 'Arce', img: 'Narrative Paper Editor/ARCE .png' },
-      { name: 'Ego-Ugan', img: 'Narrative Paper Editor/Ego-Ugan.png' },
-      { name: 'Medina', img: 'Narrative Paper Editor/MEDINA.jpg' },
-      { name: 'Pedragosa', img: 'Narrative Paper Editor/PEDRAGOSA (1).png' },
-      { name: 'Reyes', img: 'Narrative Paper Editor/REYES CHRISTIAN.png' }
+      { name: 'Arce', img: 'arce .png' },                                     // Fixed
+      { name: 'Ego-Ugan', img: 'ego-ugan.png' },                              // Fixed
+      { name: 'Medina', img: 'medina.jpg' },                                  // Fixed
+      { name: 'Pedragosa', img: 'pedragosa (1).png' },                        // Fixed
+      { name: 'Reyes', img: 'reyes christian.png' }                           // Fixed
     ]
   }
 }
 
+// All other components unchanged - they already use `/images/${img}`
 function LeaderCard({ data }) {
   return (
     <div className="card leader">
